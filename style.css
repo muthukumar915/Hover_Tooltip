@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 a.icon::before{
     font-family: 'fontAwesome';
@@ -41,5 +42,61 @@ a.youtube::before{
     right: -25px;
     padding: 5px;
     transition: all 0.4s;
-    /* opacity: 0; */
+    opacity: 0;
    }
+   a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    border-radius: 100%;
+    padding: 15px 18px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 3px 10px rgba(225,225,225,0.169);
+   }
+span::before{
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+a:hover span{
+    bottom: 50px;
+    opacity: 1;
+}
+a.facebook:hover{
+    background-color: rgb(8, 179, 231);
+}
+a.facebook span{
+    color:  rgb(8, 179, 231);
+}
+
+
+
+a.youtube:hover{
+    background-color: rgb(247, 4, 4);
+}
+a.youtube span{
+    color:  rgb(255, 0, 0);
+}
+a.github:hover{
+    background-color: rgb(5, 5, 5);
+}
+a.github span{
+    color:  rgb(0, 0, 0);
+}
+a.dribble:hover{
+    background-color: #f62459;
+}
+a.dribble span{
+    color: #f62459;
+}
+a.pinterest:hover{
+    background-color: #f22613;
+}
+a.pinterest span{
+    color: #f22613;
+}
