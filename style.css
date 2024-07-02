@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a.icon::before{
+    font-family: 'fontAwesome';
+    color: white;
+    font-size: 20px;
+}
+a.facebook::before{
+ content: '\f09a';
+}
+a.youtube::before{
+    content: '\f16a';
+   }
+   a.github::before{
+    content: '\f113';
+   }
+   a.dribble::before{
+    content: '\f17d';
+   }
+   a.pinterest::before{
+    content: '\f0d2';
+   }
+   a span{
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: helvetica;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -25px;
+    padding: 5px;
+    transition: all 0.4s;
+    /* opacity: 0; */
+   }
